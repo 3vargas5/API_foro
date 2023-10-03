@@ -34,12 +34,12 @@ Un ejemplo de un tópico en formato JSON es el siguiente:
 ##Rutas de la API
 La API expone las siguientes rutas para interactuar con los tópicos:
 
--POST /topicos: crea un nuevo tópico y lo guarda en la base de datos. Recibe como parámetro un objeto JSON con los atributos del tópico (excepto el estatus, que se asigna por defecto a NO_RESUELTO). Devuelve el tópico creado con un código de respuesta 201 (CREATED).
+- POST /topicos: crea un nuevo tópico y lo guarda en la base de datos. Recibe como parámetro un objeto JSON con los atributos del tópico (excepto el estatus, que se asigna por defecto a NO_RESUELTO). Devuelve el tópico creado con un código de respuesta 201 (CREATED).
 
--GET /topicos: muestra todos los tópicos existentes en la base de datos. No recibe ningún parámetro. Devuelve una lista de objetos JSON con los atributos de los tópicos y un código de respuesta 200 (OK).
+- GET /topicos: muestra todos los tópicos existentes en la base de datos. No recibe ningún parámetro. Devuelve una lista de objetos JSON con los atributos de los tópicos y un código de respuesta 200 (OK).
 
--GET /topicos/{id}: muestra el tópico con el identificador especificado en la ruta. No recibe ningún parámetro. Devuelve un objeto JSON con los atributos del tópico y un código de respuesta 200 (OK). Si no existe ningún tópico con ese identificador, devuelve un código de respuesta 404 (NOT FOUND).
+- GET /topicos/{id}: muestra el tópico con el identificador especificado en la ruta. No recibe ningún parámetro. Devuelve un objeto JSON con los atributos del tópico y un código de respuesta 200 (OK). Si no existe ningún tópico con ese identificador, devuelve un código de respuesta 404 (NOT FOUND).
 
--PUT /topicos/{id}: actualiza el tópico con el identificador especificado en la ruta. Recibe como parámetro un objeto JSON con los atributos del tópico que se quieren modificar. Devuelve el tópico actualizado con un código de respuesta 200 (OK). Si no existe ningún tópico con ese identificador, devuelve un código de respuesta 404 (NOT FOUND).
+- PUT /topicos/{id}: actualiza el tópico con el identificador especificado en la ruta. Recibe como parámetro un objeto JSON con los atributos del tópico que se quieren modificar. Devuelve el tópico actualizado con un código de respuesta 200 (OK). Si no existe ningún tópico con ese identificador, devuelve un código de respuesta 404 (NOT FOUND).
 
--DELETE /topicos/{id}: elimina el tópico con el identificador especificado en la ruta. No recibe ningún parámetro. Devuelve un código de respuesta 204 (NO CONTENT). Si no existe ningún tópico con ese identificador, devuelve un código de respuesta 404 (NOT FOUND).
+- DELETE /topicos/{id}: elimina el tópico con el identificador especificado en la ruta. No recibe ningún parámetro. Devuelve un código de respuesta 204 (NO CONTENT). Si no existe ningún tópico con ese identificador, devuelve un código de respuesta 404 (NOT FOUND).
